@@ -66,6 +66,10 @@ Taro.getSetting({
 
 以上两种情况，1 分钟后，`startLocationUpdateBackground`api 即失效，只有重新解锁手机，重新回到微信，api 的实时位置监控才被唤醒，尚未找到解决方法
 
+### 其他
+
+钉钉小程序`dd.getLocation`只有当前钉钉小程序当前在激活状态下可以获取到，切换到后台和手机锁屏后，即失效
+
 ### 参考资料
 
 1. [微信小程序授权](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html)
